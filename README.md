@@ -5,6 +5,7 @@
 とりあえず動かしてみたい時用
 
 1 lambda_function.py ファイル名と lambda_handler で関数を作成する
+
 2 pip で requests をインストールする
 
 ```
@@ -18,7 +19,7 @@ cd package
 zip -r ../my-deployment-package.zip .
 ```
 
-4 最初に作成した lambda_function.py も zip する。
+4 最初に作成した lambda_function.py も一緒に zip する。
 
 ```
 zip my-deployment-package.zip lambda_function.py
@@ -37,7 +38,7 @@ my-deployment-package.zip$
   ...
 ```
 
-6 コンソールの Lambda Functions から function を選んで右上の Upload from からアップ
+6 コンソールの Lambda Functions から function を選んで右上の Upload from から zip をアップ
 
 ## まとめ
 
